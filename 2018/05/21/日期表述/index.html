@@ -15,7 +15,7 @@
     <meta name="description" content="">
     <meta name="Cache-Control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>wqs&#39;s Studio</title>
+    <title>日期表述 · wqs&#39;s Studio</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -70,6 +70,8 @@
 
     <link rel="preload" href= /css/style.css?v=20180501 as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <link rel="stylesheet" href= /css/mobile.css?v=20180501 media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
         
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
@@ -191,14 +193,23 @@
 </head>
 
     
-        <body class="home-body">
+        <body class="post-body">
     
     
-<header class="header index-header">
+<header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >wqs&#39;s Studio.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">日期表述</a>
+            </div>
+    </div>
     
     <a class="home-link" href=/>wqs's Studio.</a>
 </header>
@@ -219,17 +230,17 @@ height:50vh;
     <!-- 主页  -->
     
     
-    <!-- 文章页  -->
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/intro/4.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/1.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            wqs's Studio.
-            <!-- 文章页  -->
+            日期表述
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
@@ -237,12 +248,42 @@ height:50vh;
             <!-- 主页副标题  -->
             
             
-                It worth.
-            
-            <!-- 文章页  -->
+            <!-- 404 -->
             
         </p>
         <!-- 文章页meta -->
+        
+            <!-- 文章页标签  -->
+            
+                <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "日本語">日本語</a>
+    
+</div>
+            
+            <div class="post-intro-meta">
+                <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                <span class="post-intro-time">2018/05/21</span>
+                
+                <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                    <span class="iconfont-archer">&#xe602;</span>
+                    <span id="busuanzi_value_page_pv"></span>
+                </span>
+                
+                <span class="shareWrapper">
+                    <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                    <span class="shareText">Share</span>
+                    <ul class="shareList">
+                        <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                            <div class="share-qrcode"></div>
+                        </li>
+                        <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                        <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                        <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                        <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                    </ul>
+                </span>
+            </div>
         
     </div>
 </div>
@@ -346,235 +387,95 @@ height:50vh;
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/21/日期表述/" >
-                
-                    <span>日期表述</span>
-            </a>
-            <div class="abstract-content">
-                常规表述：日：こち周：しゅう月：げつ年：ねん先：せん今：こん来：らい再：さ
+            <main class="main post-page">
+    <article class="article-entry">
+        <p>常规表述：<br>日：こち<br>周：しゅう<br>月：げつ<br>年：ねん<br>先：せん<br>今：こん<br>来：らい<br>再：さ</p>
+<table>
+<thead>
+<tr>
+<th>-2</th>
+<th>-1</th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>一昨日<br>おととい</strong></td>
+<td><strong>昨日<br>きのう</strong></td>
+<td><strong>今日<br>きょう</strong></td>
+<td><strong>明日<br>あした</strong></td>
+<td><strong>明後日<br>あさって</strong></td>
+<td>日</td>
+</tr>
+<tr>
+<td>先先週<br>せんせんしゅう</td>
+<td>先週<br>せんしゅう</td>
+<td>今週<br>こんしゅう</td>
+<td>来週<br>らいしゅう</td>
+<td>再来週<br>さらいしゅう</td>
+<td>周</td>
+</tr>
+<tr>
+<td>先先月<br>せんせんげつ</td>
+<td>先月<br>せんげつ</td>
+<td>今月<br>こんげつ</td>
+<td>来月<br>らいげつ</td>
+<td>再来月<br>さらいげつ</td>
+<td>月</td>
+</tr>
+<tr>
+<td><strong>一昨年<br>おととし</strong></td>
+<td><strong>去年<br>きょねん</strong></td>
+<td><strong>今年<br>ことし</strong></td>
+<td>来年<br>らいねん</td>
+<td>再来年<br>さらいねん</td>
+<td>年</td>
+</tr>
+</tbody>
+</table>
 
-
-
--2
--1
-0
-1
-2
-
-
-
-
-
-一昨日おととい
-昨日きのう
-今日きょう
-明日あした
-明後日あさって
-日
-
-
-先先週せんせんしゅう
-先週せんしゅう
-今週こんしゅう
-来週らいしゅう
-再来週さらいしゅう
-周
-
-
-先先月せんせんげつ
-先月せんげつ
-今月こんげつ
-来月らいげつ
-再来月さらいげつ
-月
-
-
-一昨年おととし
-去年きょねん
-今年ことし
-来年らいねん
-再来年さらいねん
-年
-
-
-
-
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/21</span>
-                </div>
-                <!-- tags  -->
-                
-                <div class= abstract-tags >
+    </article>
+    <!-- license  -->
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "日本語">日本語</a>
-    
-</div>
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/19/photos/" >
-                
-                    <span>photos</span>
-            </a>
-            <div class="abstract-content">
-                
-
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/19</span>
-                </div>
-                <!-- tags  -->
-                
-                <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "photos">photos</a>
-    
-</div>
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/18/whooops/" >
-                
-                    <span>whooops</span>
-            </a>
-            <div class="abstract-content">
-                this site is only for storing my note!
-
-        
-            
-        
-        
-          var ap = new APlayer({
-            element: document.getElementById("aplayer-qzRZeyAS"),
-            narrow: false,
-            autoplay: true,
-            showlrc: false,
-            music: {
-              ...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/18</span>
-                </div>
-                <!-- tags  -->
-                
-                <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "introduction">introduction</a>
-    
-</div>
-                
-            </div>
-        </article>
-    
-    <!-- paginator  -->
-    
-</main>
-            <!-- profile -->
-            
-            <div class="profile">
-    <img class="profile-avatar" src= /avatar/bsg.jpeg >
-    <div class="profile-name">wqs</div>
-    
-    <div class="profile-signature">
-        simple
-    </div>
-    
-    
-    <div class="profile-social">
-        
-    
-        
-            
-                <a href="mailto:wqs001116@gmail.com" class="iconfont-archer email" title=email ></a>
-            
-        
-    
-        
-            
-                <a href="//github.com/Kirinosama" class="iconfont-archer github" target="_blank" title=github></a>
-            
-        
-    
-        
-            
-                <span class="iconfont-archer wechat" title=wechat>
-                  
-                  <img class="profile-qr" src="/assets/wechat_qr.png" />
-                </span>
-            
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-
-    </div>
-    
-    
-        <div class="friends">
-            <div>FRIENDS</div>
-            
-                
-                    <span>
-                        <a href= //www.baidu.com target="_black">friendA</a>
-                    </span>
-                
-            
-                
-                    <span>
-                        <a href= //www.google.com target="_black">friendB</a>
-                    </span>
-                
-            
-                
-            
+        <div class="license-wrapper">
+            <p>原文作者: <a href="http://Kirinosama.github.io">Qisheng Wong</a>
+            <p>原文链接: <a href="http://Kirinosama.github.io/2018/05/21/日期表述/">http://Kirinosama.github.io/2018/05/21/日期表述/</a>
+            <p>发表日期: <a href="http://Kirinosama.github.io/2018/05/21/日期表述/">May 21st 2018, 12:52:58</a>
+            <p>版权声明: 本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
+    <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2018/05/19/photos/" title= photos >
+                    <div class="prevTitle">photos</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
-</div>
+    
+    <!--PC版-->
+
+    <!--PC版-->
+
+
+    
+    <!-- 评论 -->
+</main>
+            <!-- profile -->
             
         </div>
         <footer class="footer footer-unloaded">
@@ -647,6 +548,24 @@ height:50vh;
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -784,6 +703,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
     
     </body>
 </html>
