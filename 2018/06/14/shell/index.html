@@ -15,7 +15,7 @@
     <meta name="description" content="">
     <meta name="Cache-Control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>wqs&#39;s Studio</title>
+    <title>shell · wqs&#39;s Studio</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -70,6 +70,8 @@
 
     <link rel="preload" href= /css/style.css?v=20180501 as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <link rel="stylesheet" href= /css/mobile.css?v=20180501 media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
         
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
@@ -191,12 +193,23 @@
 </head>
 
     
+        <body class="post-body">
+    
     
 <header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >wqs&#39;s Studio.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">shell</a>
+            </div>
+    </div>
     
     <a class="home-link" href=/>wqs's Studio.</a>
 </header>
@@ -210,24 +223,67 @@
 
 
 
+height:50vh;
+
 >
     
     <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/1.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
+            
+            shell
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+            
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页meta -->
+        
+            <!-- 文章页标签  -->
+            
+                <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Coding">Coding</a>
+    
+</div>
+            
+            <div class="post-intro-meta">
+                <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                <span class="post-intro-time">2018/06/14</span>
+                
+                <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                    <span class="iconfont-archer">&#xe602;</span>
+                    <span id="busuanzi_value_page_pv"></span>
+                </span>
+                
+                <span class="shareWrapper">
+                    <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                    <span class="shareText">Share</span>
+                    <ul class="shareList">
+                        <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                            <div class="share-qrcode"></div>
+                        </li>
+                        <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                        <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                        <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                        <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                    </ul>
+                </span>
+            </div>
         
     </div>
 </div>
@@ -331,174 +387,48 @@
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
+            <main class="main post-page">
+    <article class="article-entry">
+        <p>在shell中执行命令的几种方式</p>
+<p>1.<br>    命令后 + &amp; 表示放在后台运行    (eg: git push &amp;)<br>    与ctrl+z后bg该job等效<br>    可用kill + %jobs编号 终止<br>2.<br>    nohup + 命令 (eg: nohup git push)<br>    不挂断运行命令 无法通过jobs查看 用ps调出所有进程<br>    可与 &amp; 配合使用</p>
+
+    </article>
+    <!-- license  -->
     
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/21/verb/" >
-                
-                    <span>verb</span>
-            </a>
-            <div class="abstract-content">
-                标号表示重音
-形态转化
-1.休(やす)む(2) -&gt; 休みます 休息
-2.働(はたら)く(0) -&gt; 始(はじ)まる -&gt; 始(はじ)まります 开始
-3.終(お)わる -&gt; 終わります 结束
-4.起(お)きる -&gt; 寝(ね)る -&gt; 寝ます 睡觉
-5.勉強(べんきょう) -&gt; 勉強します 学习
-时态表示礼貌体:ます否定:ません过去式:ました过去否定:ませんでした
-
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/21</span>
-                </div>
-                <!-- tags  -->
-                
-                <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "日本語">日本語</a>
-    
-</div>
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/21/日期表述/" >
-                
-                    <span>日期表述</span>
-            </a>
-            <div class="abstract-content">
-                常规表述：日：こち周：しゅう月：げつ年：ねん先：せん今：こん来：らい再：さ
-
-
-
--2
--1
-0
-1
-2
-
-
-
-
-
-一昨日おととい
-昨日きのう
-今日きょう
-明日あした
-明後日あさって
-日
-
-
-先先週せんせんしゅう
-先週せんしゅう
-今週こんしゅう
-来週らいしゅう
-再来週さらいしゅう
-周
-
-
-先先月せんせんげつ
-先月せんげつ
-今月こんげつ
-来月らいげつ
-再来月さらいげつ
-月
-
-
-一昨年おととし
-去年きょねん
-今年ことし
-来年らいねん
-再来年さらいねん
-年
-
-
-
-
-
-
-一
-二
-三
-四
-五
-六
-日
-
-
-
-
-月曜日げつようび
-火曜日かようび
-水曜日すいようび
-木曜日もくようび
-金曜日きにょうび
-土...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/21</span>
-                </div>
-                <!-- tags  -->
-                
-                <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "日本語">日本語</a>
-    
-</div>
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/18/whooops/" >
-                
-                    <span>whooops</span>
-            </a>
-            <div class="abstract-content">
-                this site is only for storing my note!
-
-        
-            
-        
-        
-          var ap = new APlayer({
-            element: document.getElementById("aplayer-QUqyyDSL"),
-            narrow: false,
-            autoplay: true,
-            showlrc: false,
-            music: {
-              ...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/18</span>
-                </div>
-                <!-- tags  -->
-                
-                <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "introduction">introduction</a>
-    
-</div>
-                
-            </div>
-        </article>
+        <div class="license-wrapper">
+            <p>原文作者: <a href="http://Kirinosama.github.io">Qisheng Wong</a>
+            <p>原文链接: <a href="http://Kirinosama.github.io/2018/06/14/shell/">http://Kirinosama.github.io/2018/06/14/shell/</a>
+            <p>发表日期: <a href="http://Kirinosama.github.io/2018/06/14/shell/">June 14th 2018, 2:31:44</a>
+            <p>版权声明: 本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
     
     <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2018/05/21/verb/" title= verb >
+                    <div class="prevTitle">verb</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
+    
+    <!--PC版-->
+
+    <!--PC版-->
+
+
+    
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -573,6 +503,24 @@
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -722,6 +670,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
     
     </body>
 </html>
